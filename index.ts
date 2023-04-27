@@ -19,7 +19,7 @@ async function handler(req: Request): Promise<Response> {
     return await serveFile(req,"الغلاف.html");
   } else if (match) {
     const id = decodeURI(match.pathname.groups.id);
-    console.log(id); 
+    //console.log(id); 
     return await serveFile(req,id);
   }
 
